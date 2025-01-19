@@ -9,7 +9,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import ResponsiveAppBar from "@/components/appbar";
 import HomePage from "@/pages/HomePage"; // Import HomePage component
 import Footer from "@/components/Footer";
-
+import Box from "@mui/material/Box";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,8 +23,17 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
-      <ResponsiveAppBar sx={{ backgroundColor: "transparent", boxShadow: "none" }} />
-      <HomePage /> {/* Render HomePage content here */}
+      {/* Option 1: If ResponsiveAppBar supports sx */}
+      {/* <ResponsiveAppBar sx={{ backgroundColor: "transparent", boxShadow: "none" }} /> */}
+
+      {/* Option 2: Use Box as a wrapper */}
+      
+      <Box sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
+        <ResponsiveAppBar />
+      </Box>
+     
+
+      <HomePage />
       <Footer />
     </>
   );
