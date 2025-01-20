@@ -25,24 +25,32 @@ export default function Footer() {
       </h2>
       <Carousel />
 
-      {/* Register Section */}
-      <div className="mt-11 bg-gradient-to-r from-[#1a1a1a] via-[#3d3d3d] to-[#1d1d1e] text-center sm:text-left py-32 sm:p-10 min-h-[350px] rounded-lg shadow-lg mb-40 mx-auto max-w-7xl lg:mt-14">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          {/* Text Section */}
-          <div className="sm:w-3/4">
-            <h2 className="lg:text-5xl sm:text-4xl font-bold lg:mt-6">Register Your Startup Now!</h2>
-            <p className="text-gray-400 mt-8 text-xl sm:text-xl  leading-relaxed space-y-4">
-              Applications are welcome round the year. To apply, please fill in the form <br />here and
-              click the submit button.
-              For any queries, <br />clarification, or discussion about the idea, please feel free to contact the <br />coordinator, Dr. Ranjana Vyas.
-            </p>
-          </div>
-          {/* Button Section */}
-          <button className="relative px-12 py-6 text-black font-medium text-2xl bg-teal-300 rounded-lg shadow-lg hover:from-teal-500 hover:to-teal-400 transition-all z-10">
-          Get Started
-          </button>
-        </div>
-      </div>
+    {/* Register Section */}
+<div className="mt-11 bg-gradient-to-r from-[#1a1a1a] via-[#3d3d3d] to-[#1d1d1e] text-center sm:text-left py-32 sm:p-10 min-h-[350px] rounded-lg shadow-lg mb-40 mx-auto max-w-7xl lg:mt-14">
+  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+    {/* Text Section */}
+    <div className="sm:w-3/4 sm:mb-2">
+      <h2 className="lg:text-5xl sm:text-4xl text-3xl font-bold lg:mt-6">
+        Register Your Startup Now!
+      </h2>
+      <p className="text-gray-400 mt-8 text-xl sm:text-1xl leading-relaxed space-y-4">
+        Applications are welcome round the year. To apply, please fill in the form <br />here and
+        click the submit button.
+        For any queries, <br />clarification, or discussion about the idea, please feel free to contact the <br />coordinator, Dr. Ranjana Vyas.
+      </p>
+    </div>
+    {/* Button Section */}
+    <div className="sm:mt-8 flex justify-center">
+      <button className="lg:px-12 lg:py-6 lg:text-2xl lg:mr-4 lg:mt-3 sm:mt-6 mt-6  px-8 py-4 text-black font-medium text-lg bg-teal-300 rounded-lg shadow-lg hover:from-teal-500 hover:to-teal-400 transition-all z-10 w-auto">
+        Get Started
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
  
     {/*image scetion*/}
       <div className="flex flex-wrap justify-center lg:justify-between items-center gap-4 lg:gap-6 mb-20">
@@ -121,24 +129,25 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section: Copyright and Social Media */}
-      <div className="mt-8 border-t border-lightGray  pt-6 flex flex-wrap sm:flex-col sm:items-center md:flex-row md:justify-between text-center">
-        <p className=" text-lightGray text-[20px]">
-          Copyright © 2023 NewGen IEDC. All Rights Reserved.
-        </p>
-        <div className="flex space-x-4 sm:mt-4 lg:mt-0">
-          <a href="https://www.instagram.com/ecell_iiita/" className="hover:text-teal-400">
-            <Instagram fontSize="large" />
-          </a>
-          <a href="https://www.facebook.com/" className="hover:text-teal-400">
-            <Facebook fontSize="large" />
-          </a>
-          <a href="https://x.com/home" className="hover:text-teal-400">
-            <Twitter fontSize="large" />
-          </a>
-          <a href="https://www.linkedin.com/feed/" className="hover:text-teal-400">
-            <LinkedIn fontSize="large" />
-          </a>
-        </div>
+      <div className="mt-8 border-t border-lightGray pt-6 flex flex-col items-center sm:flex-col sm:items-center md:flex-row md:justify-between text-center">
+  <p className="text-lightGray lg:text-[18px] sm:text-[15px] mb-4 md:mb-0">
+    Copyright © 2023 NewGen IEDC. All Rights Reserved.
+  </p>
+  <div className="flex flex-wrap justify-center space-x-4 sm:space-x-2 lg:space-x-4 mt-4 md:mt-0">
+    <a href="https://www.instagram.com/ecell_iiita/" className="hover:text-teal-400">
+      <Instagram fontSize="large" />
+    </a>
+    <a href="https://www.facebook.com/" className="hover:text-teal-400">
+      <Facebook fontSize="large" />
+    </a>
+    <a href="https://x.com/home" className="hover:text-teal-400">
+      <Twitter fontSize="large" />
+    </a>
+    <a href="https://www.linkedin.com/feed/" className="hover:text-teal-400">
+      <LinkedIn fontSize="large" />
+    </a>
+  </div>
+
       </div>
     </footer>
   );
